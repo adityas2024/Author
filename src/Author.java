@@ -9,17 +9,21 @@ public class Author {
         this.gender = G;
     }
 
-    public void SetEmail(){ email = "john.stones2013@gmail.com" ; }
-
-    public void GetName (){name = this.name ;
-        System.out.println(this.name);
-    }
-    public void GetGender (){gender = this.gender;
-        System.out.println(this.gender);
+    public void SetEmail(String E){
+        this.email = E;
     }
 
+    public String GetEmail(){
+        return this.email;
+    }
 
+    public String GetName(){
+        return this.name;
+    }
 
+    public char GetGender(){
+        return this.gender;
+    }
 
     public String toString(){
        if (this.gender == 'M')
